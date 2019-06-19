@@ -250,7 +250,7 @@
 				// Look for format code character, A-Z. Almost always B for cards
 				// used by the general public. Some reader / OS combinations
 				// will issue lowercase characters when the caps lock key is on.
-				if ((e.which >= 65 && e.which <= 90) || (e.which >= 97 && e.which <= 122)) {
+				if ((e.which >= 65 && e.which <= 90) || (e.which >= 97 && e.which <= 122) || (e.which >= 48 && e.which <= 57)) {
 					state(states.READING);
 
 					// Leaving focus on a form element wreaks browser-dependent
